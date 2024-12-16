@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Select</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon -->
+	<link href="../static/img/favicon.ico" rel="shortcut icon"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery-ui.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aos.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+
+	 {{ dropzone.load() }}
+     {{ dropzone.style('border: 3px dashed #0087F7; margin: 5%; min-height: 300px;') }}
+    
+  </head>
+
+    <body>
+	
+	
+  <div class="site-wrap">
+    <header class="site-navbar" role="banner">
+      <div class="site-navbar-top">
+        <div class="container">
+          <div class="row align-items-center">
+<div class="col-6 col-md-4 order-3 order-md-3 text-right">
+              <div class="site-top-icons">
+                <ul>
+   
+                  
+                 <li><a href="http://127.0.0.1:5000/"><span class="icon-home"></span></a></li>
+                  <li><a href="http://127.0.0.1:5000/click"><span class="icon-camera"></span></a></li>
+                  <li><a href="http://127.0.0.1:5000/sel"><span class="icon-image"></span></a></li>
+                  <li class="d-inline-block d-md-none ml-md-0"><a href="index.html" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                </ul>
+              </div> 
+            </div>
+            
+
+            <div class="row justify-content-center  mb-5">
+              <div style = "align:center;"class="site-logo">
+               
+                <a  href="index.html" >Fungal Infection Image Classification</a>
+              </div>
+            </div>
+
+            
+     
+    </header>
+
+    <div class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-0"><a href="index.html">Select</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Infected Pet Image</strong></div>
+        </div>
+           
+      </div>
+    </div>
+        {{ dropzone.create(action_view='index') }}
+    </body>
+</html>

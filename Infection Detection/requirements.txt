@@ -1,0 +1,6 @@
+flask_uploads
+flask_dropzone
+werkzeug==2.0.3
+selenium
+matplotlib
+tensorflow

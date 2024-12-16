@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Infection</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery-ui.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aos.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+	
+  
+
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+    <header class="site-navbar" role="banner">
+      <div class="site-navbar-top">
+        <div class="container">
+          <div class="row align-items-center">
+
+            
+
+            <div class="row justify-content-center  mb-5">
+              <div style = "align:center;"class="site-logo">
+               
+                <a  href="index.html" >Fungal Infection Image Classification</a>
+              </div>
+            </div>
+
+            
+     
+    </header>
+
+    <div class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-0"><a href="index.html">Recognize</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Infected Pet Image</strong></div>
+        </div>
+       
+          
+          
+      </div>
+    </div>  
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            
+            <img src="static/im/{{n1}}" alt="Image" class="img-fluid">
+
+          </div>
+            
+            
+<div class="col-md-6">
+<br>
+<br>
+<br>
+            <h2 class="text-black">Infected Pet Image</h2><br>
+			 <p><strong class="text-primary h4">Detection</strong></p>
+            <p><strong class='text-black'>The Fungal Infection Detection algorithm will now process this image to first classify as which pet animal and then it will run image processing to detect the type of Fungal Infection. </strong></p>
+    
+ 
+            <p><a href="http://127.0.0.1:5000/pred" class="buy-now btn btn-sm btn-primary">Check Animal</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+        
+
+	<script src="{{url_for('static', filename='jquery-3.3.1.min.js')}}"></script>
+	<script src="{{url_for('static', filename='jquery-ui.js')}}"></script>
+	<script src="{{url_for('static', filename='popper.min.js')}}"></script>
+	<script src="{{url_for('static', filename='bootstrap.minA.js')}}"></script>	
+	<script src="{{url_for('static', filename='owl.carousel.minA.js')}}"></script>
+	<script src="{{url_for('static', filename='jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{url_for('static', filename='aos.js')}}"></script>
+	<script src="{{url_for('static', filename='mainA.js')}}"></script>
+    
+  </body>
+</html>

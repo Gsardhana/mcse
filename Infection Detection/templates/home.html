@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Infection Detection</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon -->
+	<link href="../static/img/favicon.ico" rel="shortcut icon"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery-ui.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aos.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+    <header class="site-navbar" role="banner">
+      <div class="site-navbar-top">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+              <form action="" class="site-block-top-search">
+                <span class="icon icon-search2"></span>
+                <input type="text" class="form-control border-0" placeholder="Search">
+              </form>
+            </div>
+
+            <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+              <div class="site-logo">
+                <a href="http://127.0.0.1:5000/" class="js-logo-clone">Infection Detection</a>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+              <div class="site-top-icons">
+                <ul>
+                      <li><a href="http://127.0.0.1:5000/"><span class="icon-home"></span></a></li>
+                  <li><a href="http://127.0.0.1:5000/click"><span class="icon-camera"></span></a></li>
+                  <li><a href="http://127.0.0.1:5000/sel"><span class="icon-image"></span></a></li>
+                
+                  <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                </ul>
+              </div> 
+            </div>
+
+          </div>
+        </div>
+      </div> 
+      
+    </header>
+
+    <div class="site-blocks-cover" style="background-image: url({{ url_for('static', filename='img/dog3.jpg') }})"  ; data-aos="fade">
+      <div class="container">
+        <div class="row align-items-start align-items-md-center justify-content-end">
+          <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
+            <h1 class="mb-2">Use AI to treat your Pets...</h1>
+            <div class="intro-text text-center text-md-left">
+              <p class="mb-4" style = "color:white;">Image Recognition technology to find from which fungal skin disease your pet is suffering from. Providing Diagnosis and Treatments.  </p>
+              <p>
+                <a href="http://127.0.0.1:5000/click" class="btn btn-sm btn-primary">Capture Infection Sample</a>
+				</p><p>
+				<a href="http://127.0.0.1:5000/sel" class="btn btn-sm btn-primary">Select Infection Sample</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+	<!--====== Javascripts & Jquery ======-->
+	
+	
+	<script src="{{url_for('static', filename='jquery-3.3.1.min.js')}}"></script>
+	<script src="{{url_for('static', filename='jquery-ui.js')}}"></script>
+	<script src="{{url_for('static', filename='popper.min.js')}}"></script>
+	<script src="{{url_for('static', filename='bootstrap.minA.js')}}"></script>	
+	<script src="{{url_for('static', filename='owl.carousel.minA.js')}}"></script>
+	<script src="{{url_for('static', filename='jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{url_for('static', filename='aos.js')}}"></script>
+	<script src="{{url_for('static', filename='mainA.js')}}"></script>
+
+    
+  </body>
+</html>
